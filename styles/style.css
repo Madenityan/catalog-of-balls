@@ -1,0 +1,283 @@
+/*--- RESET ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*--- RESET END ---*/
+
+@font-face {
+    font-family: 'NeoSansPro-Regular';
+    src: url('../fonts/NeoSansPro/NeoSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NeoSansPro-Medium';
+    src: url('../fonts/NeoSansPro/NeoSansPro-Medium.ttf');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.body {
+    background-color: #fff;
+}
+
+.container {
+    font-family: NeoSansPro-Regular;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.breadcrumb:before {
+    content: '';
+    background-image: url('../image/home.png');
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    vertical-align: bottom;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.breadcrumb {
+    margin-bottom: 25px;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    color: #9ba3a9;
+}
+
+.breadcrumb li a {
+    color: #9ba3a9;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb li+li:before {
+    content: '-';
+    padding: 10px;
+}
+
+.title {
+    font-family: NeoSansPro-Medium;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.filtration {
+    border: 2px solid #e5f0fb;
+    background-color: #eef8ff;
+    border-radius: 5px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-radio {
+    border-right: 1px solid red;
+}
+
+.checkbox-title, .checkbox, .sort {
+    color: #4c4c4c;
+    font-size: 14px;
+}
+
+.sort {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.checkbox-radio {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: 5px;
+}
+
+.checkbox-radio .radio {
+    display: none;
+}
+
+.radio:checked + .radio-button {
+     border: 2px solid #ff4343;
+     border-radius: 50%;
+ }
+
+.radio-button {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.red-button{
+    background-color: #e30013;
+}
+
+.black-button {
+    background-color: #3b3b3b;
+}
+
+.yellow-button {
+    background-color: #e3c400;
+}
+
+.white-button {
+    background-color: #fff;
+}
+
+.green-button {
+    background-color: #76e300;
+}
+
+.rose-button {
+    background-color: #e300a0;
+}
+
+.orange-button {
+    background-color: #e37000;
+}
+
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.check-button {
+    background-color: #d7e2ea;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    vertical-align: middle;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.checkbox input:checked + .check-button:before {
+    content: "\2714";
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    background-color: #f73e3d;
+}
+
+.price {
+    font-family: NeoSansPro-Medium;
+    position: relative;
+    left: 5px;
+    color: #ff0000;
+    font-weight: 500;
+    border-bottom: 1px dotted #ff0000;
+    cursor: pointer;
+}
+
+.sort-higher:after {
+    content: '\2191';
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    left: 12px;
+}
+
+.sort-poor:after {
+    content: '\2193';
+    display: inline-block;
+    font-size: 15px;
+}
+
+.sort-higher,.sort-poor {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+.sort-higher {
+    position: relative;
+    right: 8px;
+}
+
+.price:hover {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
