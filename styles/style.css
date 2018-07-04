@@ -54,6 +54,16 @@ table {
     src: url('../fonts/NeoSansPro/NeoSansPro-Medium.ttf');
 }
 
+@font-face {
+    font-family: 'NeoSansPro-Bold';
+    src: url('../fonts/NeoSansPro/NeoSansPro-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'JazzBall-Bold';
+    src: url('../fonts/JazzBall/JazzBall-Bold.ttf');
+}
+
 
 * {
     box-sizing: border-box;
@@ -116,10 +126,12 @@ table {
     padding: 15px 10px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .form-radio {
-    border-right: 1px solid red;
+    border-right: 1px solid #c2d1dc;
+    padding-right: 50px;
 }
 
 .checkbox-title, .checkbox, .sort {
@@ -155,6 +167,7 @@ table {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    margin-right: 5px;
 }
 
 .red-button{
@@ -186,6 +199,11 @@ table {
 }
 
 
+.form-checkbox {
+    padding: 0 50px;
+    border-right: 1px solid #c2d1dc;
+}
+
 .checkbox input[type="checkbox"] {
     display: none;
 }
@@ -214,6 +232,10 @@ table {
     height: 20px;
     border-radius: 20%;
     background-color: #f73e3d;
+}
+
+.wrapper-sort {
+    padding-left: 50px;
 }
 
 .price {
@@ -255,8 +277,167 @@ table {
     border-bottom: none;
 }
 
+.wrapper-image {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px;
+}
+
+.list-catalog-balls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-catalog-balls li {
+    text-align: center;
+    padding: 15px 25px;
+    width: 190px;
+    border: 1px solid #d0dbe6;
+    border-radius: 10px;
+}
+
+.list-catalog-balls li:nth-child(-n+4) {
+    border-right: none;
+}
+
+.info-about-balls h2 a {
+    font-size: 14px;
+    color: #0093ca;
+}
 
 
+.info-about-balls {
+    margin-bottom: 10px;
+}
+.info-about-balls h2 {
+    line-height: 20px;
+    margin-bottom: 10px;
+    height: 42px;
+}
+
+.info-about-balls-2 h2 {
+    height: 20px;
+}
+
+.info-about-balls h2 a:hover {
+    text-decoration: none;
+}
+
+.description-ball {
+    font-size: 13px;
+    color: #606060;
+    line-height: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.description-ball-2 {
+    height: 40px;
+}
+
+.price-ball {
+    font-size: 13px;
+    color: #606060;
+    line-height: 20px;
+}
+
+.price-ball span {
+    font-family: NeoSansPro-Bold;
+    font-size: 18px;
+}
+
+.strikethrough {
+    position: relative;
+    color: #aaaaaa;
+    font-size: 17px;
+}
+
+.strikethrough:before {
+    content: "";
+    position: absolute;
+    border-top: 3px solid;
+    border-color: #ff0000;
+    top: 50%;
+    left: -5px;
+    right: -5px;
+
+    -webkit-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+
+.wrapper-buy {
+    display: flex;
+    background-color: #eef8ff;
+    border-radius: 20px;
+}
+
+.order-balls {
+    border-radius: 20px;
+    padding: 5px 0 5px 5px;
+    display: flex;
+}
+
+.quantity-balls {
+    text-align: left;
+    display: inline-block;
+}
+
+.field span {
+    font-size: 14px;
+    color:#575757;
+}
+
+.quantity-balls input {
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 14px;
+    color:#575757;
+    background-color: transparent;
+    width: 25px;
+}
+
+.field {
+    border: 1px solid #cacbcb;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 70px;
+}
+
+.btn-buy button {
+    font-family: JazzBall-Bold;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    display: block;
+    color: #798690;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    outline: none;
+}
+
+.buy:after {
+    content: '';
+    background-image: url('../image/buy.png');
+    display:inline-block;
+    width: 20px;
+    height: 18px;
+
+}
+
+.buy {
+    background-color: #f73d3c;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 14px 12px;
+}
 
 
 
