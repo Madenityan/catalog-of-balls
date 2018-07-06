@@ -16,3 +16,4 @@ $('.minus-btn').on("click",function(){
     $input.change();
     return false;
 });
+
