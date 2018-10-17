@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>catalog of balls</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li>Воздушные шары</li>
+    </ul>
+    <header class="title">
+        <h1 >Каталог шариков</h1>
+    </header>
+    <section class="filtration">
+        <form name="radio" method="get" action="#" class="form-radio">
+            <label class="checkbox-title">Цвет:</label>
+            <label class="checkbox-radio">
+                <input type="radio" class="radio" name="yellow" value="yellow-button"/>
+                <span class="radio-button yellow-button"></span>
+            </label>
+            <label class="checkbox-radio">
+                <input type="radio" class="radio" name="green" value="green-button"/>
+                <span class="radio-button green-button"></span>
+            </label>
+            <label class="checkbox-radio">
+                <input type="radio" class="radio" name="rose" value="rose-button"/>
+                <span class="radio-button rose-button"></span>
+            </label>
+            <label class="checkbox-radio">
+                <input type="radio" class="radio" name="orange" value="orange-button"/>
+                <span class="radio-button orange-button"></span>
+            </label>
+        </form>
+        <form name="checkbox" method="get" action="#" class="form-checkbox">
+            <label class="checkbox">
+                <input type="checkbox" class="all-balls" name="all" value="all-balls" />Все шары
+                <span class="check-button"></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="set-balls" name="set" value="set-balls" />Комплекты
+                <span class="check-button"></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="one-ball" name="one" value="one-ball" />По одному
+                <span class="check-button"></span>
+            </label>
+        </form>
+        <div class="wrapper-sort">
+            <p class="sort">Сортировать по: <span class="price">Цене</span></p>
+            <p class="sort-higher"></p>
+            <p class="sort-poor"></p>
+        </div>
+    </section>
+    <section class="catalog-balls">
+        <ul class="list-catalog-balls" id="page-content">
+            <li data-price="75" class="rose-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-rose.png" alt="ball-rose">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный, полупрозрачный, средний, красный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="200"/></label>
+                            </form>
+                           <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="75" class="rose-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-rose.png" alt="ball-rose">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный, полупрозрачный, средний, красный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="200"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="75" class="rose-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-rose.png" alt="ball-rose">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный, полупрозрачный, средний, красный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="200"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="orange-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-orange.png" alt="ball-orange">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="orange-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-orange.png" alt="ball-orange">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="orange-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-orange.png" alt="ball-orange">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="75" class="kit-ball goods">
+                <div class="wrapper-image">
+                    <img src="image/ball-kit.png" alt="ball-kit">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды</a></h2>
+                    <p class="description-ball">Фигуры, латексный, полупрозрачный, средний, красный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="200"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="yellow-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-yellow.png" alt="ball-yellow">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды и Кометы»</a></h2>
+                    <p class="description-ball">Фигуры, латексный, полупрозрачный, средний, красный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="yellow-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-yellow.png" alt="ball-yellow">
+                </div>
+                <div class="info-about-balls">
+                    <h2><a href="#">Шары «Звезды»</a></h2>
+                    <p class="description-ball">Фигуры, латексный, полупрозрачный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="yellow-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-yellow.png" alt="ball-yellow">
+                </div>
+                <div class="info-about-balls info-about-balls-2">
+                    <h2><a href="#">Шары «Звезды»</a></h2>
+                    <p class="description-ball description-ball-2">Фигуры, латексный, полупрозрачный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="75" class="rose-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-rose.png" alt="ball-yellow">
+                </div>
+                <div class="info-about-balls info-about-balls-2">
+                    <h2><a href="#">Шары «Кометы»</a></h2>
+                    <p class="description-ball description-ball-2">Фигуры, латексный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="yellow-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-yellow.png" alt="ball-yellow">
+                </div>
+                <div class="info-about-balls info-about-balls-2">
+                    <h2><a href="#">Шары «Звезды»</a></h2>
+                    <p class="description-ball description-ball-2">Фигуры, латексный, полупрозрачный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="75" class="green-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-green.png" alt="ball-green">
+                </div>
+                <div class="info-about-balls info-about-balls-2">
+                    <h2><a href="#">Шары «Кометы»</a></h2>
+                    <p class="description-ball description-ball-2">Фигуры, латексный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="75" class="green-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-green.png" alt="ball-green">
+                </div>
+                <div class="info-about-balls info-about-balls-2">
+                    <h2><a href="#">Шары «Кометы»</a></h2>
+                    <p class="description-ball description-ball-2">Фигуры, латексный</p>
+                    <p class="price-ball"><span>75 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+            <li data-price="15075" class="green-ball goods one-by-one">
+                <div class="wrapper-image">
+                    <img src="image/ball-green.png" alt="ball-green">
+                </div>
+                <div class="info-about-balls info-about-balls-2">
+                    <h2><a href="#">Шары «Звезды»</a></h2>
+                    <p class="description-ball description-ball-2">Фигуры, латексный, полупрозрачный</p>
+                    <p class="price-ball"><span>15 075 P</span> / шт.</p>
+                    <span class="strikethrough">90 P</span>
+                </div>
+                <div class="wrapper-buy">
+                    <div class="order-balls">
+                        <div class="field">
+                            <form name="quantity" method="get" action="#" class="quantity-balls">
+                                <label><input type="text" name="quantity" value="2"/></label>
+                            </form>
+                            <span>шт.</span>
+                        </div>
+                        <div class="btn-buy">
+                            <button class="plus-btn">+</button>
+                            <button class="minus-btn">-</button>
+                        </div>
+                    </div>
+                    <div class="buy"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
