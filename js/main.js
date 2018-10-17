@@ -58,7 +58,6 @@ $(document).ready(function() {
         }).show(); //НЕ ПРАЦЮЄ
     });
 
-
 });
 
 
