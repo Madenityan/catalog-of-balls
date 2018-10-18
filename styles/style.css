@@ -238,10 +238,9 @@ table {
     padding-left: 50px;
 }
 
-.price {
+.price-btn {
     font-family: NeoSansPro-Medium;
     position: relative;
-    left: 5px;
     color: #ff0000;
     font-weight: 500;
     border-bottom: 1px dotted #ff0000;
@@ -253,7 +252,7 @@ table {
     display: inline-block;
     font-size: 14px;
     position: relative;
-    left: 12px;
+    left: 0;
 }
 
 .sort-poor:after {
@@ -270,7 +269,7 @@ table {
 
 .sort-higher {
     position: relative;
-    right: 8px;
+    left: 2px;
 }
 
 .price:hover {
@@ -312,7 +311,7 @@ table {
 }
 
 .info-about-balls-2 h2 {
-    height: 20px;
+    height: 44px;
 }
 
 .info-about-balls h2 a:hover {
@@ -325,10 +324,6 @@ table {
     line-height: 20px;
     margin-bottom: 10px;
     height: 60px;
-}
-
-.description-ball-2 {
-    height: 40px;
 }
 
 .price-ball {
@@ -368,6 +363,12 @@ table {
     display: flex;
     background-color: #eef8ff;
     border-radius: 20px;
+    margin-top: auto;
+}
+
+.goods {
+    display: flex;
+    flex-direction: column;
 }
 
 .order-balls {

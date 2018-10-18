@@ -50,15 +50,41 @@ $(document).ready(function() {
         $("[class*=one-by-one]").show();
     });
 
-    $('.price').on("click",function (minPrice, maxPrice) {
-        $("#page-content li").filter(function() {
-            let price = parseInt($(this).data("price"), 75);
-            console.log(minPrice);
-            return price >= minPrice && price <= maxPrice;
-        }).show(); //НЕ ПРАЦЮЄ
+    $('.sort-poor').on("click",function() {
+        $('li[data-price]').sort(function (a, b) {
+            let x = parseInt($(a).data('price'));
+            let y = parseInt($(b).data('price'));
+            return (x > y) ? (x < y) ? 1 : 1 : -1;
+        }).appendTo('#page-content');
     });
 
+    $('.sort-higher').on("click",function() {
+        $('li[data-price]').sort(function (a, b) {
+            let x = parseInt($(a).data('price'));
+            let y = parseInt($(b).data('price'));
+            return (x < y) ? (x >y) ? 1 : 1 : -1;
+        }).appendTo('#page-content');
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
